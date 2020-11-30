@@ -1,0 +1,258 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+body 
+    min-height: 100vh
+    background: #000
+    overflow-x: hidden
+.background-container
+	position: absolute
+	top: 0
+	left: 0
+	min-height: 100vh
+	overflow-x: hidden
+	z-index: -100
+	.row
+		display: inline-flex
+		margin-top: -32px
+		margin-left: -50px
+		margin-bottom: 3px
+		&:nth-child(even)
+			margin-left: 1px
+	.hexagon 
+		position: relative
+		width: 100px
+		height: 110px
+		background: #111
+		margin: 2px
+		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+		transition: 2s
+		&::before 
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 50%
+			height: 100%
+			pointer-events: none
+			background: rgba(255, 255, 255, 0.02)
+			z-index: -100
+#cursor 
+    position: absolute
+    top: 0
+    left: 0
+    width: 400px
+    height: 400px
+    background: #0f0
+    border-radius: 50%
+    transform: translate(-50%, -50%)
+    animation: animate 4s linear infinite
+    z-index: -102
+@keyframes animate 
+    0% 
+        filter: hue-rotate(0deg) blur(50px)
+    100% 
+        filter: hue-rotate(360deg) blur(50px)
+.container
+	position: relative
+	margin: 0 auto
+	width: 1200px
+	height: 3000px
+	border: 1px solid red
+	z-index: 5
+	.menu
+		position: relative
+		top: 54px
+		left: 54px
+		width: 624px
+		height: 110px
+		border: 1px solid green
+		background: #111
+		ul
+			list-style: none
+			display: flex
+			justify-content: space-around
+			align-items: center
+			font-size: 24px
+			height: 100%
+			color: green
+	.photo
+		position: absolute
+		top: 50px
+		right: 50px
+		width: 270px
+		height: 340px
+		background: #111
+		border: 1px solid green
+		float: right
+		color: green
+		img
+			display: block
+			margin: 0 auto
+			width: 268px
+		.subscription
+			width: 100%
+			border: 1px solid green
+			text-align: center
+	.about
+		position: relative
+		width: 1000px
+		height: 500px
+		border: 1px solid green
+		margin: 370px auto 0
+		background: #111
+		ul
+			list-style: none
+			color: green
+			display: flex
+			padding-left: 20px
+			li
+				display: block
+				margin: 20px 0 0 0
+				padding: 10px 20px
+				border: 1px solid green
+				cursor: pointer
+				font-size: 20px
+				transform: skewX(-25deg)
+				&.active
+					color: #111111
+					background: green
+				div
+					transform: skewX(25deg)
+		.content
+			display: none
+			width: 100%
+			height: 400px
+			border: 1px solid gray
+			padding: 20px
+			color: green
+			font-size: 20px
+			&.aboutMe
+				
+			&.work
+			&.techs
+				display: block
+				.techs-wrapper
+					width: 100%
+					height: 100%
+					display: flex
+					flex-direction: column
+					flex-wrap: wrap
+					.tech-container
+						// border: 1px solid green
+						display: flex
+						align-items: center
+						padding: 10px
+						// width: 40%
+						img
+							height: 50px
+							margin-right: 10px
+						span
+							// vertical-align: 20px
+	.portfolio
+		margin: 50px auto 0
+		width: 1000px
+		height: 500px
+		border: 1px solid green
+		background: #111
+		.active-wrapper
+			display: flex
+			border: 1px solid gray
+			width: 100%
+			height: 90%
+			margin-top: 5%
+			.logo-zone
+				display: flex
+				flex-direction: column
+				justify-content: space-around
+				align-items: center
+				height: 100%
+				width: 50%
+				padding: 20px 0
+				color: green
+				.name, .type
+					width: 100%
+					display: inline-flex
+					justify-content: center
+					align-items: center
+					min-height: 70px
+				.logo-wrapper
+					display: flex
+					justify-content: space-evenly
+					align-items: center
+					width: 100%
+					margin: 10px 0
+					.logo-round
+						height: 200px
+						width: 200px
+						border-radius: 50%
+						border: 1px solid green
+					button
+						height: 100px
+						width: 50px
+						border: 1px solid green
+						background: none
+						&:hover
+							cursor: pointer
+						img
+							width: 100%
+							object-fit: contain
+					.right
+						img
+							transform: scaleX(-1)
+				span
+					font-weight: 600
+					font-size: 20px
+			.descr
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				width: 50%
+				height: 100%
+				border-radius: 5px
+				padding: 20px
+				color: green
+				font-size: 20px
+				h3
+					margin-bottom: 10px
+					font-size: 20px
+				&-cont
+					border: 2px solid green
+					border-radius: 5px
+					padding: 10px
+					div
+						max-height: 164px
+						overflow-y: auto
+				&-techs
+					border: 2px solid green
+					border-radius: 5px
+					padding: 10px
+					.tech-box
+						display: flex
+						justify-content: left
+						flex-wrap: wrap
+						max-height: 110px
+						overflow-y: auto
+					img
+						height: 50px
+						margin: 0 5px 5px 0
+			
+			
+
+
+
+
+				
+
+
+
+				
+
+					
+				
+
+
+
+
+    
