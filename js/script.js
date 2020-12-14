@@ -1,3 +1,5 @@
+import projects from "./projects.js";
+
 window.onload = () => {
     
     let bgContainer = document.querySelector(".background-container");
@@ -56,6 +58,63 @@ window.onload = () => {
             e.currentTarget.classList.add("active");
             console.log("click")
         }
+    })
+
+    // initiate projects carousel
+
+    let projNo = 0;
+
+    function showProject(number) {
+        projNo = number;
+        const projNameField = document.querySelector(".proj-name"),
+              projTypeField = document.querySelector(".proj-type"),
+              projLogoField = document.querySelector(".logo-round"),
+              projDescrField = document.querySelector(".descr-text"),
+              projTechsField = document.querySelector(".tech-box");
+
+        projNameField.innerText = projects[number].projName;
+        projTypeField.innerText = projects[number].projType;
+        projDescrField.innerText = projects[number].projDescr;
+
+        let logoImg =  document.createElement('IMG');
+        logoImg.src = projects[number].projLogo;
+        projLogoField.innerHTML = "";
+        projLogoField.appendChild(logoImg);
+
+        if (projects[number].usedTechs.length > 0) {
+            projTechsField.innerHTML = "";
+            projects[number].usedTechs.forEach(item => {
+                let logoImg =  document.createElement('IMG');
+                logoImg.src = item;
+                projTechsField.appendChild(logoImg);
+            })
+        }
+        
+    }
+
+    if (projects.length > 0) {
+        showProject(0);
+    }
+
+    // slider arrows
+
+    const arrow = document.querySelectorAll('.logo-wrapper>button');
+    arrow.forEach(button => {
+        button.onclick = () => {
+            if (button.classList.contains("left")) {
+                if (projNo == 0) {
+                    showProject(projects.length - 1);
+                } else {
+                    showProject(projNo - 1);
+                }
+            } else {
+                if (projNo == projects.length - 1) {
+                    showProject(0);
+                } else {
+                    showProject(projNo + 1);
+                }
+            }
+        } 
     })
 
 }
