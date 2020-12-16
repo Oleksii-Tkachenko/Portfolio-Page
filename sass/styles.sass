@@ -48,9 +48,9 @@ body
     background: #0f0
     border-radius: 50%
     transform: translate(-50%, -50%)
-    animation: animate 4s linear infinite
+    animation: animateCursor 4s linear infinite
     z-index: -102
-@keyframes animate 
+@keyframes animateCursor 
     0% 
         filter: hue-rotate(0deg) blur(50px)
     100% 
@@ -63,16 +63,10 @@ body
 	border: 1px solid red
 	z-index: 5
 	.menu
-		// position: relative
-		// top: 54px
-		// left: 54px
 		margin: 50px 0 0 100px
 		width: 600px
 		font-family: "Jura", sans-serif
 		font-weight: 700
-		// height: 110px
-		// border: 1px solid green
-		// background: #111
 		ul
 			list-style: none
 			display: flex
@@ -80,21 +74,22 @@ body
 			align-items: center
 			font-size: 20px
 			height: 100%
-			color: green
+			
 			li
-				// display: flex
 				border: 1px solid green
 				border-radius: 5px
-				// height: 50px
-				// padding: 0 20px
-				// justify-content: center
-				// align-items: center
 				background: #111
+				color: green
+				transition: 0.5s
+				&:hover
+					color: #111
+					border: 1px solid #111
+					background: green
 			a
 				display: flex
 				text-decoration: none
 				text-transform: uppercase
-				color: green
+				color: inherit
 				height: 50px
 				padding: 0 20px
 				justify-content: center
@@ -118,8 +113,8 @@ body
 					pointer-events: none
 					font-family: "Font Awesome 5 Pro"
 			select
-				background: #111
-				color: green
+				background: inherit
+				color: inherit
 				width: 80px
 				height: 50px
 				border-radius: 5px
@@ -129,6 +124,9 @@ body
 				appearance: none
 				outline: none
 				cursor: pointer
+				option
+					color: green
+					background: #111
 	.photo
 		position: absolute
 		top: 50px
@@ -154,10 +152,10 @@ body
 	.about
 		position: relative
 		width: 1000px
-		height: 500px
-		border: 1px solid green
+		// height: 500px
+		// border: 1px solid red
 		margin: 370px auto 0
-		background: #111
+		// c
 		font-family: "Jura", sans-serif
 		font-weight: 700
 		ul
@@ -167,12 +165,14 @@ body
 			padding-left: 20px
 			li
 				display: block
+				background: #111
 				margin: 20px 0 0 0
 				padding: 10px 20px
 				border: 1px solid green
 				cursor: pointer
 				font-size: 20px
 				transform: skewX(-25deg)
+				transition: 0.5s
 				&.active
 					color: #111111
 					background: green
@@ -182,15 +182,17 @@ body
 			display: none
 			width: 100%
 			height: 400px
-			border: 1px solid gray
+			border: 1px solid green
+			border-radius: 5px
+			background: #111
 			padding: 20px
 			color: green
 			font-size: 20px
 			&.aboutMe
-				
+				display: block
 			&.work
 			&.techs
-				display: block
+				
 				.techs-wrapper
 					width: 100%
 					height: 100%
@@ -207,17 +209,16 @@ body
 	.portfolio
 		margin: 50px auto 0
 		width: 1000px
-		height: 500px
+		height: 450px
 		border: 1px solid green
+		border-radius: 5px
 		background: #111
 		font-family: "Jura", sans-serif
 		font-weight: 700
 		.active-wrapper
 			display: flex
-			border: 1px solid gray
 			width: 100%
-			height: 90%
-			margin-top: 5%
+			height: 100%
 			.logo-zone
 				display: flex
 				flex-direction: column
@@ -251,15 +252,21 @@ body
 					button
 						height: 100px
 						width: 50px
-						border: 1px solid green
+						border: 1px solid #111
+						border-radius: 10px
 						background: none
+						outline: none
 						&:hover
 							cursor: pointer
-						img
-							width: 100%
-							object-fit: contain
+							border: 1px solid #111
+							background: green
+							g
+								fill: #111111
+						// svg
+						// 	width: 100%
+						// 	object-fit: contain
 					.right
-						img
+						svg
 							transform: scaleX(-1)
 				span
 					font-weight: 600
@@ -278,14 +285,14 @@ body
 					margin-bottom: 10px
 					font-size: 20px
 				&-cont
-					border: 2px solid green
+					border: 1px solid green
 					border-radius: 5px
 					padding: 10px
 					div
 						max-height: 164px
 						overflow-y: auto
 				&-techs
-					border: 2px solid green
+					border: 1px solid green
 					border-radius: 5px
 					padding: 10px
 					.tech-box
@@ -296,12 +303,13 @@ body
 						overflow-y: auto
 					img
 						height: 50px
-						margin: 0 5px 5px 0
+						margin: 0 12px 0 0
 	.contacts
 		margin: 50px auto 0
 		width: 1000px
 		height: 200px
 		border: 1px solid green
+		border-radius: 5px
 		background: #111
 		padding: 20px
 		font-family: "Jura", sans-serif
