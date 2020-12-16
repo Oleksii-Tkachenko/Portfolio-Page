@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css">
     <link rel="stylesheet" href="css/styles.min.css">
     <title>Portfolio</title>
 </head>
@@ -12,18 +13,25 @@
     <div class="container">
         <nav class="menu">
             <ul>
-                <li>About</li>
-                <li>About</li>
-                <li>About</li>
-                <li>About</li>
-                <li>About</li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li>
+                    <div class="lang-select">
+                        <select>
+                            <option value="en">EN</option>
+                            <option value="ru">RU</option>
+                            <option value="ua">UA</option>
+                        </select>
+                    </div>
+                </li>
             </ul>
         </nav>
         <div class="photo">
             <img src="img/photo.jpg" alt="photo">
             <div class="subscription"><span>Web Developer<br>Olexii Tkachenko</span></div>
         </div>
-        <div class="about">
+        <div id="about" class="about">
             <ul>
                 <li class="aboutMe-toggle"><div>About me</div></li>
                 <li class="work-toggle"><div>Work experience</div></li>
@@ -111,7 +119,7 @@
                 </div>
             </div>
         </div>
-        <div class="portfolio">
+        <div id="portfolio" class="portfolio">
             <div class="active-wrapper">
                 <div class="logo-zone">
                     <div class="name"><p><span class="title">Project Name: </span><span class="proj-name">Lorem ipsum dolor</span></p></div>
@@ -146,6 +154,16 @@
                 </div>
                 
                 
+            </div>
+        </div>
+        <div id="contacts" class="contacts">
+            <span>Thank you for your interest. Contact me:</span>
+            <div class="contacts-box">
+                <a href="mailto:atkachenko981@gmail.com"><img src="img/icons/gmail.png" alt="gmail"></a>
+                <a href="https://join.skype.com/invite/jAOYng1gBSD8" target="_blank"><img src="img/icons/skype.png" alt="skype"></a>
+                <a href="https://www.facebook.com/alexei.tkachenko.7" target="_blank"><img src="img/icons/fb.png" alt="fb"></a>
+                <a href="https://www.linkedin.com/in/oleksii-tkachenko-9b7570135/" target="_blank"><img src="img/icons/linkedin.png" alt="in"></a>
+                <a href="https://github.com/Oleksii-Tkachenko" target="_blank"><img src="img/icons/github.png" alt="github"></a>
             </div>
         </div>
     </div>

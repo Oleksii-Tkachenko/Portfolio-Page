@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
 *
     margin: 0
     padding: 0
@@ -58,43 +59,98 @@ body
 	position: relative
 	margin: 0 auto
 	width: 1200px
-	height: 3000px
+	height: 1800px
 	border: 1px solid red
 	z-index: 5
 	.menu
-		position: relative
-		top: 54px
-		left: 54px
-		width: 624px
-		height: 110px
-		border: 1px solid green
-		background: #111
+		// position: relative
+		// top: 54px
+		// left: 54px
+		margin: 50px 0 0 100px
+		width: 600px
+		font-family: "Jura", sans-serif
+		font-weight: 700
+		// height: 110px
+		// border: 1px solid green
+		// background: #111
 		ul
 			list-style: none
 			display: flex
-			justify-content: space-around
+			justify-content: space-between
 			align-items: center
-			font-size: 24px
+			font-size: 20px
 			height: 100%
 			color: green
+			li
+				// display: flex
+				border: 1px solid green
+				border-radius: 5px
+				// height: 50px
+				// padding: 0 20px
+				// justify-content: center
+				// align-items: center
+				background: #111
+			a
+				display: flex
+				text-decoration: none
+				text-transform: uppercase
+				color: green
+				height: 50px
+				padding: 0 20px
+				justify-content: center
+				align-items: center
+			.lang-select
+				position: relative
+				display: flex
+				height: 50px
+				// padding: 0 20px
+				justify-content: center
+				align-items: center
+				&::before
+					content: "\f0ac"
+					position: absolute
+					top: 12px
+					right: 10px
+					width: 30px
+					height: 100%
+					font-size: 23px
+					text-align: center
+					pointer-events: none
+					font-family: "Font Awesome 5 Pro"
+			select
+				background: #111
+				color: green
+				width: 80px
+				height: 50px
+				border-radius: 5px
+				padding: 0 0 0 10px
+				font-size: 20px
+				border: 0
+				appearance: none
+				outline: none
+				cursor: pointer
 	.photo
 		position: absolute
 		top: 50px
-		right: 50px
-		width: 270px
-		height: 340px
-		background: #111
-		border: 1px solid green
+		right: 100px
 		float: right
 		color: green
 		img
 			display: block
 			margin: 0 auto
-			width: 268px
+			width: 260px
+			border-radius: 10px
 		.subscription
+			position: absolute
+			top: 322px
+			right: 0px
 			width: 100%
 			border: 1px solid green
 			text-align: center
+			background: #111
+			font-size: 20px
+			font-family: "Jura", sans-serif
+			font-weight: 700
 	.about
 		position: relative
 		width: 1000px
@@ -102,6 +158,8 @@ body
 		border: 1px solid green
 		margin: 370px auto 0
 		background: #111
+		font-family: "Jura", sans-serif
+		font-weight: 700
 		ul
 			list-style: none
 			color: green
@@ -140,22 +198,20 @@ body
 					flex-direction: column
 					flex-wrap: wrap
 					.tech-container
-						// border: 1px solid green
 						display: flex
 						align-items: center
 						padding: 10px
-						// width: 40%
 						img
 							height: 50px
 							margin-right: 10px
-						span
-							// vertical-align: 20px
 	.portfolio
 		margin: 50px auto 0
 		width: 1000px
 		height: 500px
 		border: 1px solid green
 		background: #111
+		font-family: "Jura", sans-serif
+		font-weight: 700
 		.active-wrapper
 			display: flex
 			border: 1px solid gray
@@ -241,7 +297,29 @@ body
 					img
 						height: 50px
 						margin: 0 5px 5px 0
-			
+	.contacts
+		margin: 50px auto 0
+		width: 1000px
+		height: 200px
+		border: 1px solid green
+		background: #111
+		padding: 20px
+		font-family: "Jura", sans-serif
+		font-weight: 700
+		span
+			color: green
+			font-size: 20px
+		&-box
+			width: 100%
+			height: 100%
+			display: flex
+			justify-content: left
+			align-items: center
+			img
+				display: inline-block
+				width: 60px
+				height: 60px
+				margin-left: 20px		
 			
 
 

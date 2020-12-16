@@ -4,7 +4,7 @@ window.onload = () => {
     
     let bgContainer = document.querySelector(".background-container");
     let winWidth = window.screen.availWidth;
-    let docHeight = 4200;
+    let docHeight = 2600;
     function createBg() {
         let row = document.createElement("DIV");
         let hexagon = document.createElement("DIV");
@@ -36,6 +36,16 @@ window.onload = () => {
     window.onmousemove = function (e) {
         cursor.style.left = e.clientX + 'px';
         cursor.style.top = e.clientY + window.scrollY + 'px';
+    }
+
+    // select Language
+
+    let lang = "en";
+
+    const langSelect = document.querySelector(".lang-select>select")
+    langSelect.onchange = () => {
+        lang = langSelect.value;
+        showProject(projNo)
     }
 
     // "About me" section tab toggle
@@ -72,7 +82,7 @@ window.onload = () => {
               projDescrField = document.querySelector(".descr-text"),
               projTechsField = document.querySelector(".tech-box");
 
-        projNameField.innerText = projects[number].projName;
+        projNameField.innerText = projects[number].projName[lang];
         projTypeField.innerText = projects[number].projType;
         projDescrField.innerText = projects[number].projDescr;
 
