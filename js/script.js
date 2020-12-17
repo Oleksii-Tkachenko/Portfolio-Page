@@ -1,4 +1,5 @@
 import projects from "./projects.js";
+import content from "./content.js";
 
 window.onload = () => {
     
@@ -46,8 +47,57 @@ window.onload = () => {
     langSelect.onchange = () => {
         lang = langSelect.value;
         showProject(projNo)
+        insertContent()
     }
+    // insert content
 
+    function insertContent() {
+        const menu = document.querySelectorAll(".menu a");
+        for (let i = 0; i <= 2; i++) {
+            menu[i].innerHTML = content.menu[lang][i];
+        }
+
+        const descr = document.querySelector(".photo .subscription span");
+        descr.innerHTML = content.subscr[lang];
+
+        const menu_toggle = document.querySelectorAll('li[class*=toggle] div');
+        for (let i = 0; i <= 3; i++) {
+            menu_toggle[i].innerHTML = content.menu_about[lang][i];
+        }
+
+        const about_me = document.querySelector('.content.aboutMe');
+        about_me.innerHTML = content.about_me[lang];
+
+        const work_exp = document.querySelector(".content.work");
+        work_exp.innerHTML = content.work_experience[lang];
+
+        const edu_titles = document.querySelectorAll(".content.education h3");
+        for (let i = 0; i <= 1; i++) {
+            edu_titles[i].innerHTML = content.education.titles[lang][i];
+        }
+
+        const edu_content = document.querySelector(".content.education .edu");
+        edu_content.innerHTML = content.education.edu[lang];
+
+        const edu_cert = document.querySelector(".content.education .cert");
+        edu_cert.innerHTML = content.education.cert[lang];
+
+        const portf_name = document.querySelector(".portfolio .name .title");
+        portf_name.innerHTML = content.portfolio[lang][0];
+
+        const portf_type = document.querySelector(".portfolio .type .title");
+        portf_type.innerHTML = content.portfolio[lang][1];
+
+        const portf_pr_descr = document.querySelector(".portfolio .descr-cont h3");
+        portf_pr_descr.innerHTML = content.portfolio[lang][2];
+
+        const portf_pr_techs = document.querySelector(".portfolio .descr-techs h3");
+        portf_pr_techs.innerHTML = content.portfolio[lang][3];
+
+        const contacts_text = document.querySelector(".contacts span");
+        contacts_text.innerHTML = content.contacts[lang];
+    }
+    insertContent()
     // "About me" section tab toggle
 
     const toggles = document.querySelectorAll('li[class*=toggle]');
@@ -66,7 +116,6 @@ window.onload = () => {
                 item.classList.remove("active");
             })
             e.currentTarget.classList.add("active");
-            console.log("click")
         }
     })
 
