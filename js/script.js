@@ -49,6 +49,7 @@ window.onload = () => {
         showProject(projNo)
         insertContent()
     }
+
     // insert content
 
     function insertContent() {
@@ -98,6 +99,7 @@ window.onload = () => {
         contacts_text.innerHTML = content.contacts[lang];
     }
     insertContent()
+
     // "About me" section tab toggle
 
     const toggles = document.querySelectorAll('li[class*=toggle]');
@@ -127,26 +129,54 @@ window.onload = () => {
         projNo = number;
         const projNameField = document.querySelector(".proj-name"),
               projTypeField = document.querySelector(".proj-type"),
-              projLogoField = document.querySelector(".logo-round"),
+              projLogoField = document.querySelector(".logo-box"),
               projDescrField = document.querySelector(".descr-text"),
-              projTechsField = document.querySelector(".tech-box");
+              projTechsField = document.querySelector(".tech-box"),
+              projCodeLinc = document.querySelector(".examine");
 
         projNameField.innerText = projects[number].projName[lang];
-        projTypeField.innerText = projects[number].projType;
-        projDescrField.innerText = projects[number].projDescr;
+        projTypeField.innerText = projects[number].projType[lang];
+        projDescrField.innerText = projects[number].projDescr[lang];
 
-        let logoImg =  document.createElement('IMG');
+        let logoA = document.createElement('A'),
+            logoImg = document.createElement('IMG');
+        logoA.href = projects[number].projLink;
+        logoA.target = "_blank";
         logoImg.src = projects[number].projLogo;
+        logoA.appendChild(logoImg);
         projLogoField.innerHTML = "";
-        projLogoField.appendChild(logoImg);
+        projLogoField.appendChild(logoA);
 
         if (projects[number].usedTechs.length > 0) {
             projTechsField.innerHTML = "";
             projects[number].usedTechs.forEach(item => {
                 let logoImg =  document.createElement('IMG');
-                logoImg.src = item;
+                logoImg.src = `img/icons/${item}.png`;
                 projTechsField.appendChild(logoImg);
             })
+        }
+
+        if (projects[number].codeLink) {
+            projCodeLinc.innerHTML = "";
+            let linkButton = document.createElement('A');
+            linkButton.href = projects[number].codeLink;
+            linkButton.classList.add("examine-link");
+            linkButton.target = "_blank";
+            switch (lang) {
+                case "en":
+                    linkButton.textContent = "Examine code";
+                    break;
+                case "ru":
+                    linkButton.textContent = "посмотреть код";
+                    break;
+                case "ua":
+                    linkButton.textContent = "подивитись код";
+                    break;
+            }
+            
+            projCodeLinc.appendChild(linkButton);
+        } else {
+            projCodeLinc.innerHTML = "";
         }
         
     }
