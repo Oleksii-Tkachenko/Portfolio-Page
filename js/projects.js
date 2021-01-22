@@ -62,6 +62,28 @@ const projects = [
         },
         usedTechs: ["html5", "sass", "js", "svg"],
         codeLink: "https://codepen.io/AlexeiTk/pen/yLJMEVK"
+    },
+
+    {
+        projName: {
+            en: "Tradenet Plus",
+            ru: "Tradenet Plus",
+            ua: "Tradenet Plus"
+        },
+        projType: {
+            en: "Landing Page",
+            ru: "лендинг",
+            ua: "лендінг"
+        },
+        projLogo: "img/projects/tradenet.jpg",
+        projLink: "projects/tradenet/index.html",
+        projDescr: {
+            en: "This is a landing page which contains form and questionnaire. 'Country' and 'phone' fields are prefilled automatically by detecting your current location. After anwering first and last question it sends POST request to server with form data and answers.",
+            ru: "Это целевая страница, которая содержит форму и опросник. Поля 'country' и 'phone' заполняются автоматически при помощи сервиса определения местоположения. После ответов на первый и последний вопросы выполняется 'POST' запрос на сервер с содержимым формы и ответами на вопросы.",
+            ua: "Це цільова сторінка, яка включає форму і анкету. Поля 'country' и 'phone' заповнюються автоматично за допомогою сервісу визначення місцезнаходження. Після відповідей на перше і останнє питання виконується 'POST' запит на сервер з вмістом форми та відповідями на питання."
+        },
+        usedTechs: ["html5", "sass", "bootstrap", "js", "jquery", "bem", "gulp"],
+        codeLink: "https://github.com/Oleksii-Tkachenko/Tradenet-Plus"
     }
 ];
 
