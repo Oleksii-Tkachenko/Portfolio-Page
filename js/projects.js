@@ -27,9 +27,9 @@ const projects = [
             ua : "Ресторанне меню"
         },
         projType: {
-            en: "React app",
-            ru: "React app",
-            ua: "React app"
+            en: "React App",
+            ru: "React приложение",
+            ua: "React застосунок"
         },
         projLogo:"img/projects/restmenu.jpg",
         projLink: "projects/restmenu/index.html",
@@ -84,6 +84,28 @@ const projects = [
         },
         usedTechs: ["html5", "sass", "bootstrap", "js", "jquery", "bem", "gulp"],
         codeLink: "https://github.com/Oleksii-Tkachenko/Tradenet-Plus"
+    },
+
+    {
+        projName: {
+            en: "Run Smart",
+            ru: "Run Smart",
+            ua: "Run Smart"
+        },
+        projType: {
+            en: "Online Store",
+            ru: "интернет магазин",
+            ua: "інтернет магазин"
+        },
+        projLogo: "img/projects/pulsometer.jpg",
+        projLink: "projects/pulse/index.html",
+        projDescr: {
+            en: "This web page is a small online store. It uses prebild solutions from several libraries based on jQuery for form validation, mailer, slider, animation etc. Also map is appended with Google Maps API.",
+            ru: "Это страничка небольшого интернет магазина. В ней использованы готовые решения из нескольких библиотек на основе jQuery для проверки форм, отправки email, слайдера, анимации и т.д. Также добавлена карта с помощью Google Maps API.",
+            ua: "Це сторінка невеликого інтернет магазину. У ній задіяні готові рішення з декількох бібліотек на основі jQuery для перевірки форм, відправлення email, слайдера, анімації тощо. Також додана мапа за допомогою Google Maps API."
+        },
+        usedTechs: ["html5", "sass", "jquery", "slick", "gulp"],
+        codeLink: "https://github.com/Oleksii-Tkachenko/Pulsometer-landing"
     }
 ];
 
