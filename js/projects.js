@@ -106,7 +106,29 @@ const projects = [
         },
         usedTechs: ["html5", "sass", "jquery", "slick", "gulp"],
         codeLink: "https://github.com/Oleksii-Tkachenko/Pulsometer-landing"
+    },
+
+    {
+        projName: {
+            en: "Uber",
+            ru: "Uber",
+            ua: "Uber"
+        },
+        projType: {
+            en: "Landing Page",
+            ru: "лендинг",
+            ua: "лендінг"
+        },
+        projLogo: "img/projects/uber.jpg",
+        projLink: "projects/uber/index.html",
+        projDescr: {
+            en: "This is a landing page for taxi service. Front page is available only.",
+            ru: "Это первая страничка многостраничного сервиса для такси.",
+            ua: "Це перша сторінка таксі сервісу."
+        },
+        usedTechs: ["html5", "sass", "js"]
     }
+
 ];
 
 export default projects;
