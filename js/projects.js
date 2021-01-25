@@ -126,8 +126,29 @@ const projects = [
             ru: "Это первая страничка многостраничного сервиса для такси.",
             ua: "Це перша сторінка таксі сервісу."
         },
-        usedTechs: ["html5", "sass", "js"]
-    }
+        usedTechs: ["html5", "bootstrap", "sass", "js"]
+    },
+
+    {
+        projName: {
+            en: "IRVAS Windows",
+            ru: "ИРВАС окна",
+            ua: "ІРВАС вікна"
+        },
+        projType: {
+            en: "Landing Page",
+            ru: "лендинг",
+            ua: "лендінг"
+        },
+        projLogo: "img/projects/window.jpg",
+        projLink: "projects/window/index.html",
+        projDescr: {
+            en: "This is a landing page for window construction service. It has sliders, forms, tabs, timer, questionnaire etc.",
+            ru: "Это целевая страничка предприятия по изготовлению оконных систем. На ней присутствуют слайдеры, формы, табы, таймер, опросник и.т.д.",
+            ua: "Це перша сторінка підприємства з виробництва віконних систем. На ній присутні слайдери, форми, таби, таймер, анкета тощо."
+        },
+        usedTechs: ["html5", "bootstrap", "css", "js", "webpack", "slick"]
+    },
 
 ];
 

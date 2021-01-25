@@ -4,10 +4,15 @@ const content = {
         ru: ["о себе", "портфолио", "контакты"],
         ua: ["про себе", "портфоліо", "контакти"]
     },
+    name: {
+        en: "Olexii Tkachenko",
+        ru: "Алексей Ткаченко",
+        ua: "Олексій Ткаченко"
+    },
     subscr: {
-        en: "Web Developer<br>Olexii Tkachenko",
-        ru: "Веб разработчик<br>Алексей Ткаченко",
-        ua: "Веб розробник<br>Олексій Ткаченко"
+        en: "Web Developer",
+        ru: "Веб разработчик",
+        ua: "Веб розробник"
     },
     menu_about: {
         en: ["about me", "work experience", "education", "technologies"],

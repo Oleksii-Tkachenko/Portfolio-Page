@@ -58,7 +58,10 @@ window.onload = () => {
             menu[i].innerHTML = content.menu[lang][i];
         }
 
-        const descr = document.querySelector(".photo .subscription span");
+        const myName = document.querySelector(".photo .subscription .my-name");
+        myName.innerHTML = content.name[lang];
+
+        const descr = document.querySelector(".photo .subscription .my-subscr");
         descr.innerHTML = content.subscr[lang];
 
         const menu_toggle = document.querySelectorAll('li[class*=toggle] div');
