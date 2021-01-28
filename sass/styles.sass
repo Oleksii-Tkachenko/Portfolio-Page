@@ -3,16 +3,21 @@
     margin: 0
     padding: 0
     box-sizing: border-box
+html, body
+	min-height: 100vh
+	height: 100%
 body
-    min-height: 100vh
-    background: #000
-    overflow-x: hidden
+	background: #000
+	height: 1800px
+	overflow-x: hidden
 .background-container
 	position: absolute
 	top: 0
 	left: 0
 	min-height: 100vh
+	height: 1800px
 	overflow-x: hidden
+	overflow-y: hidden
 	z-index: -100
 	.row
 		display: inline-flex
@@ -58,8 +63,10 @@ body
 .container
 	position: relative
 	margin: 0 auto
+	padding-top: 0.01%
 	width: 1200px
 	height: 1800px
+	overflow: hidden
 	z-index: 5
 	.menu
 		margin: 50px 0 0 100px
@@ -127,7 +134,7 @@ body
 					background: #111
 	.photo
 		position: absolute
-		top: 0px
+		top: 50px
 		right: 100px
 		float: right
 		color: green
@@ -332,7 +339,7 @@ body
 					border-radius: 5px
 					padding: 10px
 					div
-						max-height: 164px
+						max-height: 236px
 						overflow-y: auto
 				&-techs
 					border: 1px solid green

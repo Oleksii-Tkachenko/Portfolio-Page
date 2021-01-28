@@ -20,6 +20,28 @@ const projects = [
         usedTechs: ["html5","css","sass","jquery","slick","gulp"],
         codeLink: "https://github.com/Oleksii-Tkachenko/Fashionshop"
     },
+
+    {
+        projName: {
+            en: "Healthy Food",
+            ru: "Здоровое питание",
+            ua: "Здорове харчування"
+        },
+        projType: {
+            en: "Landing Page",
+            ru: "лендинг",
+            ua: "лендінг"
+        },
+        projLogo: "img/projects/healthyfood.jpg",
+        projLink: "projects/healthyfood/index.html",
+        projDescr: {
+            en: "This is a landing page for food delivery service. This page has responsive desigh and includes slider, tabs, forms, product cards and countdown timer.",
+            ru: "Этот проект - целевая страница для сервиса доставки здоровой еды. Страница адаптирована под мобильные устройства и содержит слайдер, табы, формы обратной связи, продуктовые карточки и таймер обратного отсчёта.",
+            ua: "Цей проект - цільова сторінка для сервісу доставки здорової їжи. Сторінка адаптована під мобільні пристрої та включає в себе слайдер, таби, форми зворотнього зв'язку, продуктові картки і таймер зворотнього відліку."
+        },
+        usedTechs: ["html5", "css", "js", "webpack"]
+    },
+
     {   
         projName: {
             en : "Restaurant menu",
