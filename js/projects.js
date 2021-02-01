@@ -15,10 +15,31 @@ const projects = [
         projDescr: {
             en: "This is a landing page for internet store. This page has responsive desigh and includes several sliders and countdown timer. In mobile mode menu dropdown and accordion are implemented. Production version is optimized. WEBP picture format is included.",
             ru: "Этот проект - лендинг для рекламной акции интернет магазина. Страница адаптивная, включает в себя несколько слайдеров и таймер обратного отсчёта. В мобильной версии добавлены выпадающее меню и аккордеон. Продакшн версия оптимизирована. Добавлен формат изображений WEBP.",
-            ua: "Ця сторінка - лендінг для рекламної акції інтернет магазину. Сторінка адаптивна, включає в себе декілька слайдерів і таймер зворотнього відліку. у мобільній версії додані випадаюче меню та акордион. Сторінка оптимізована. Додан формат зображень WEBP."
+            ua: "Ця сторінка - лендінг для рекламної акції інтернет магазину. Сторінка адаптивна, включає в себе декілька слайдерів і таймер зворотнього відліку. У мобільній версії додані випадаюче меню та акордион. Сторінка оптимізована. Додан формат зображень WEBP."
         },
         usedTechs: ["html5","css","sass","jquery","slick","gulp"],
         codeLink: "https://github.com/Oleksii-Tkachenko/Fashionshop"
+    },
+
+    {
+        projName: {
+            en: "Restaurant",
+            ru: "Ресторан",
+            ua: "Ресторан"
+        },
+        projType: {
+            en: "Landing Page",
+            ru: "лендинг",
+            ua: "лендінг"
+        },
+        projLogo: "img/projects/foody.jpg",
+        projLink: "projects/foody/index.html",
+        projDescr: {
+            en: "This is a landing page for food restaurant. It has responsive desigh. In mobile mode menu dropdown is implemented.",
+            ru: "Это целевая страница для ресторана. Она адаптирована под мобильные устройства. В мобильной версии добавлено выпадающее меню.",
+            ua: "Це цільова сторінка для ресторану. Вона адаптована під мобільні пристрої. У мобільній версії додане випадаюче меню."
+        },
+        usedTechs: ["html5", "css", "sass", "bem"]
     },
 
     {
@@ -35,9 +56,9 @@ const projects = [
         projLogo: "img/projects/healthyfood.jpg",
         projLink: "projects/healthyfood/index.html",
         projDescr: {
-            en: "This is a landing page for food delivery service. This page has responsive desigh and includes slider, tabs, forms, product cards and countdown timer.",
-            ru: "Этот проект - целевая страница для сервиса доставки здоровой еды. Страница адаптирована под мобильные устройства и содержит слайдер, табы, формы обратной связи, продуктовые карточки и таймер обратного отсчёта.",
-            ua: "Цей проект - цільова сторінка для сервісу доставки здорової їжи. Сторінка адаптована під мобільні пристрої та включає в себе слайдер, таби, форми зворотнього зв'язку, продуктові картки і таймер зворотнього відліку."
+            en: "This is a landing page for food delivery service. This page has responsive desigh and includes slider, tabs, forms, product cards, countdown timer and calories calculator.",
+            ru: "Этот проект - целевая страница для сервиса доставки здоровой еды. Страница адаптирована под мобильные устройства и содержит слайдер, табы, формы обратной связи, продуктовые карточки, таймер обратного отсчёта и калькулятор калорий.",
+            ua: "Цей проект - цільова сторінка для сервісу доставки здорової їжи. Сторінка адаптована під мобільні пристрої та включає в себе слайдер, таби, форми зворотнього зв'язку, продуктові картки, таймер зворотнього відліку та калькулятор калорій."
         },
         usedTechs: ["html5", "css", "js", "webpack"]
     },
