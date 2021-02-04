@@ -13,7 +13,7 @@ const projects = [
         projLogo: "img/projects/fashionshop.jpg",
         projLink: "projects/fashionshop/index.html",
         projDescr: {
-            en: "This is a landing page for internet store. This page has responsive desigh and includes several sliders and countdown timer. In mobile mode menu dropdown and accordion are implemented. Production version is optimized. WEBP picture format is included.",
+            en: "This is a landing page for an internet store. This page has a responsive design and includes several sliders and a countdown timer. In mobile mode menu dropdown and accordion are implemented. The production version is optimized. The WEBP picture format is included.",
             ru: "Этот проект - лендинг для рекламной акции интернет магазина. Страница адаптивная, включает в себя несколько слайдеров и таймер обратного отсчёта. В мобильной версии добавлены выпадающее меню и аккордеон. Продакшн версия оптимизирована. Добавлен формат изображений WEBP.",
             ua: "Ця сторінка - лендінг для рекламної акції інтернет магазину. Сторінка адаптивна, включає в себе декілька слайдерів і таймер зворотнього відліку. У мобільній версії додані випадаюче меню та акордион. Сторінка оптимізована. Додан формат зображень WEBP."
         },
@@ -35,7 +35,7 @@ const projects = [
         projLogo: "img/projects/foody.jpg",
         projLink: "projects/foody/index.html",
         projDescr: {
-            en: "This is a landing page for food restaurant. It has responsive desigh. In mobile mode menu dropdown is implemented.",
+            en: "This is a landing page for a food restaurant. It has a responsive design. In mobile mode, a menu dropdown is implemented.",
             ru: "Это целевая страница для ресторана. Она адаптирована под мобильные устройства. В мобильной версии добавлено выпадающее меню.",
             ua: "Це цільова сторінка для ресторану. Вона адаптована під мобільні пристрої. У мобільній версії додане випадаюче меню."
         },
@@ -56,7 +56,7 @@ const projects = [
         projLogo: "img/projects/healthyfood.jpg",
         projLink: "projects/healthyfood/index.html",
         projDescr: {
-            en: "This is a landing page for food delivery service. This page has responsive desigh and includes slider, tabs, forms, product cards, countdown timer and calories calculator.",
+            en: "This is a landing page for a food delivery service. This page has responsive design and includes slider, tabs, forms, product cards, countdown timer, and calories calculator.",
             ru: "Этот проект - целевая страница для сервиса доставки здоровой еды. Страница адаптирована под мобильные устройства и содержит слайдер, табы, формы обратной связи, продуктовые карточки, таймер обратного отсчёта и калькулятор калорий.",
             ua: "Цей проект - цільова сторінка для сервісу доставки здорової їжи. Сторінка адаптована під мобільні пристрої та включає в себе слайдер, таби, форми зворотнього зв'язку, продуктові картки, таймер зворотнього відліку та калькулятор калорій."
         },
@@ -77,7 +77,7 @@ const projects = [
         projLogo:"img/projects/restmenu.jpg",
         projLink: "projects/restmenu/index.html",
         projDescr: {
-            en: "This is a training project which deals with React app development. It includes restaurant menu layout. Dishes are received from json server. There is a possibility to filter dishes by category and calculate total bill amount.",
+            en: "This is a training project which deals with React app development. It includes the restaurant menu layout. Dishes received from the JSON server. There is a possibility to filter dishes by category and calculate the total bill amount.",
             ru: "Это учебный проект по разработке на React. Он включает ресторанное меню с возможностью фильтрации блюд по категориям и получения общего счёта. Блюда загружаются с JSON сервера.",
             ua: "Це учбовий проект по розробці на React. Він включає ресторанне меню з можливістю фільтрації страв по категоріях та отримання суми замовлення. Страви завантажуються з JSON сервера."
         },
@@ -99,7 +99,7 @@ const projects = [
         projLogo: "img/projects/Pie-chart.jpg",
         projLink: "https://codepen.io/AlexeiTk/pen/yLJMEVK",
         projDescr: {
-            en: "This is an interactive pie chart constructor. It based on SVG technology especially on <animate> tag. With this module you may construct pie chart you like and name it.",
+            en: "This is an interactive pie chart constructor. It is based on SVG technology, especially on <animate> tag. With this module, you may construct the pie chart you like and name it.",
             ru: "Этот модуль представляет собой интерактивный конструктор круговых диаграмм. Он базируется на технологии SVG. В особенности, применён тег <animate>. Этот модуль позволяет конструировать и называть круговые диаграммы.",
             ua: "Цей модуль являє собою інтерактивний конструктор секторних діаграм. Він базується на технології SVG. Зокрема, тег <animate> примінений для інтерактивості. Цей модуль дозволяє конструювати і називати секторні діаграми."
         },
@@ -121,9 +121,9 @@ const projects = [
         projLogo: "img/projects/tradenet.jpg",
         projLink: "projects/tradenet/index.html",
         projDescr: {
-            en: "This is a landing page which contains form and questionnaire. 'Country' and 'phone' fields are prefilled automatically by detecting your current location. After anwering first and last question it sends POST request to server with form data and answers.",
-            ru: "Это целевая страница, которая содержит форму и опросник. Поля 'country' и 'phone' заполняются автоматически при помощи сервиса определения местоположения. После ответов на первый и последний вопросы выполняется 'POST' запрос на сервер с содержимым формы и ответами на вопросы.",
-            ua: "Це цільова сторінка, яка включає форму і анкету. Поля 'country' и 'phone' заповнюються автоматично за допомогою сервісу визначення місцезнаходження. Після відповідей на перше і останнє питання виконується 'POST' запит на сервер з вмістом форми та відповідями на питання."
+            en: "This is a landing page that contains form and questionnaire. 'Country' and 'phone' fields are prefilled automatically by detecting your current location. Fill the form to start the questionnaire. After answering the first and last question it sends a POST request to the server with form data and answers.",
+            ru: "Это целевая страница, которая содержит форму и опросник. Поля 'country' и 'phone' заполняются автоматически при помощи сервиса определения местоположения. После заполнения формы стартует опросник. После ответов на первый и последний вопросы выполняется 'POST' запрос на сервер с содержимым формы и ответами на вопросы.",
+            ua: "Це цільова сторінка, яка включає форму і анкету. Поля 'country' и 'phone' заповнюються автоматично за допомогою сервісу визначення місцезнаходження. Після заповнення форми стартеє анката. Після відповідей на перше і останнє питання виконується 'POST' запит на сервер з вмістом форми та відповідями на питання."
         },
         usedTechs: ["html5", "sass", "bootstrap", "js", "jquery", "bem", "gulp"],
         codeLink: "https://github.com/Oleksii-Tkachenko/Tradenet-Plus"
@@ -143,7 +143,7 @@ const projects = [
         projLogo: "img/projects/pulsometer.jpg",
         projLink: "projects/pulse/index.html",
         projDescr: {
-            en: "This web page is a small online store. It uses prebild solutions from several libraries based on jQuery for form validation, mailer, slider, animation etc. Also map is appended with Google Maps API.",
+            en: "This web page is a small online store. It uses prebuilt solutions from several libraries based on jQuery for form validation, mailer, slider, animation, etc. Also, the map appended with Google Maps API.",
             ru: "Это страничка небольшого интернет магазина. В ней использованы готовые решения из нескольких библиотек на основе jQuery для проверки форм, отправки email, слайдера, анимации и т.д. Также добавлена карта с помощью Google Maps API.",
             ua: "Це сторінка невеликого інтернет магазину. У ній задіяні готові рішення з декількох бібліотек на основі jQuery для перевірки форм, відправлення email, слайдера, анімації тощо. Також додана мапа за допомогою Google Maps API."
         },
@@ -165,7 +165,7 @@ const projects = [
         projLogo: "img/projects/uber.jpg",
         projLink: "projects/uber/index.html",
         projDescr: {
-            en: "This is a landing page for taxi service. Front page is available only.",
+            en: "This is a landing page for the taxi service. Frontpage is available only.",
             ru: "Это первая страничка многостраничного сервиса для такси.",
             ua: "Це перша сторінка таксі сервісу."
         },
@@ -186,7 +186,7 @@ const projects = [
         projLogo: "img/projects/window.jpg",
         projLink: "projects/window/index.html",
         projDescr: {
-            en: "This is a landing page for window construction service. It has sliders, forms, tabs, timer, questionnaire etc.",
+            en: "This is a landing page for window construction service. It has sliders, forms, tabs, timer, questionnaire, etc.",
             ru: "Это целевая страничка предприятия по изготовлению оконных систем. На ней присутствуют слайдеры, формы, табы, таймер, опросник и.т.д.",
             ua: "Це перша сторінка підприємства з виробництва віконних систем. На ній присутні слайдери, форми, таби, таймер, анкета тощо."
         },

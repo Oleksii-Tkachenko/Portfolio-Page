@@ -4,8 +4,10 @@ import content from "./content.js";
 window.onload = () => {
     
     let bgContainer = document.querySelector(".background-container");
-    let winWidth = window.screen.availWidth;
+    // let winWidth = window.screen.availWidth;
+    let winWidth = 1920;
     let docHeight = 2600;
+    // let docHeight = window.screen.availWidth;
     function createBg() {
         let row = document.createElement("DIV");
         let hexagon = document.createElement("DIV");
