@@ -193,6 +193,27 @@ const projects = [
         usedTechs: ["html5", "bootstrap", "css", "js", "webpack", "slick"]
     },
 
+    {
+        projName: {
+            en: "Childhood World",
+            ru: "Мир детства",
+            ua: "Світ дитинства"
+        },
+        projType: {
+            en: "Online Store",
+            ru: "интернет магазин",
+            ua: "інтернет магазин"
+        },
+        projLogo: "img/projects/childhood.jpg",
+        projLink: "projects/childhood/index.php",
+        projDescr: {
+            en: "This website represents a small toy online store. It is a WordPress training project. It included embedding layout into WordPress theme and configuring CMS for having dynamic posts and pages.",
+            ru: "Это сайт небольшого интернет магазина игрушек. Он создан для тренировки посадки готовой вёрстки на WordPress. Работа включала создание темы, настройку базы данных и CMS для создания динамических постов и страниц.",
+            ua: "Це сайт маленького інтернет магазину іграшок. Він був створений з метою тренування посадки готової верстки на WordPress. Робота складала створення теми, налаштування бази даних і CMS для створення динамічних постів та сторінок."
+        },
+        usedTechs: ["html5", "bootstrap", "css", "js", "wordpress"]
+    }
+
 ];
 
 export default projects;

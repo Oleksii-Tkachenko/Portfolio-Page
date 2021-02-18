@@ -41,9 +41,9 @@ const content = {
             ua: "Газонафтопроводи та газонафтосховища - спеціаліст - 2004,<br>диплом з відзнакою<br>Міжнародний науково-технічний університет, Київ"
         },
         cert: {
-            en: "HTML, CSS, JavaScript: Infopulse Univer<br>2020 HTML, CSS, JavaScript, React, Redux: Udemy, 2020",
-            ru: "HTML, CSS, JavaScript: Infopulse Univer<br>2020 HTML, CSS, JavaScript, React, Redux: Udemy, 2020",
-            ua: "HTML, CSS, JavaScript: Infopulse Univer<br>2020 HTML, CSS, JavaScript, React, Redux: Udemy, 2020"
+            en: "HTML, CSS, JavaScript: Infopulse Univer<br>HTML, CSS, JavaScript, React, Redux: Udemy, 2020<br>WordPress: Udemy, 2021",
+            ru: "HTML, CSS, JavaScript: Infopulse Univer<br>HTML, CSS, JavaScript, React, Redux: Udemy, 2020<br>WordPress: Udemy, 2021",
+            ua: "HTML, CSS, JavaScript: Infopulse Univer<br>HTML, CSS, JavaScript, React, Redux: Udemy, 2020<br>WordPress: Udemy, 2021"
         }
     },
     portfolio: {
